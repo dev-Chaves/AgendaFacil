@@ -130,3 +130,13 @@ body{
     font-weight: 800;
     font-size: 16px;
 }
+
+agenda-btn{ 
+    color: black;
+}
+
+#agenda:hover{
+    color: #213838;
+    transition: 0.3s;
+    
+}
