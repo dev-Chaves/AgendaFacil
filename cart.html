@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda Fácil</title>
     <link rel="stylesheet" href="./src/style.css">
     <!-- FONTE -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <!-- FONTE -->
     <!-- ICON -->
     <script src="https://kit.fontawesome.com/e521cdce0a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
-    <section id="header"> 
+
+    <section id="header">
         <a href="#"> <img src="./imgs/LOGO.png" class="logo" width="80px"></a>
 
         <div>
@@ -30,7 +32,7 @@
         </div>
     </section>
 
-       <section id="cart" class="section-p1">
+    <section id="cart" class="section-p1">
         <table width="100%">
             <thead>
                 <tr>
@@ -53,10 +55,56 @@
                     <td><input type="number" value="1" name="" id=""></td>
                     <td>$90</td>
                 </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="./imgs/f1.png" alt=""></td>
+                    <td>Product Name</td>
+                    <td>$90</td>
+                    <td><input type="number" value="1" name="" id=""></td>
+                    <td>$90</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="./imgs/f1.png" alt=""></td>
+                    <td>Product Name</td>
+                    <td>$90</td>
+                    <td><input type="number" value="1" name="" id=""></td>
+                    <td>$90</td>
+                </tr>
             </tbody>
-        </table>    
-       </section>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Cupom</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon" name="" id="">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subTotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 270</td>
+                </tr>
+                <tr>
+                    <td>Shipping </td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 270</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+    </section>
 
     <script src="./src/script.js"></script>
 </body>
+
 </html>
