@@ -5,6 +5,14 @@
     font-family: "League Spartan", sans-serif;
 }
 
+:root {
+    --marrom-escuro: #4d2d18 ;
+    --verde-claro: #4c6444 ;
+    --bege: #CABA9C ;
+    --marrom-claro: #8A6240 ;
+    --verde-escuro: #102820;
+  }
+
 h1{
     font-size: 50px;
     line-height: 64px;
@@ -50,7 +58,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background-color: #4c6444;
+    background-color: var(--verde-claro);
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
@@ -75,17 +83,17 @@ body{
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
-    color: #102820 ;
+    color: var(--verde-escuro) ;
     transition: 0.4s ease;
 }
 
 #navbar li a:hover{
-    color: #CABA9C ;
+    color: var(--bege) ;
 }
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #CABA9C ;
+    color: var(--bege) ;
 }
 
 #navbar li a.active::after,
@@ -93,7 +101,7 @@ body{
     content: "";
     width: 30%;
     height: 2px;
-    background: #CABA9C;
+    background:  var(--bege);
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -116,13 +124,13 @@ body{
 
 #hero h4{
     padding-bottom: 15px;
-    color: #447372;
+    color: var(--verde-claro);
 }
 
 #hero button{
     background-image: url(../imgs/button.png);
     background-color: transparent;
-    color: #447372;
+    color: var(--verde-claro);
     border: 0;
     padding: 14px 90px 14px 65px;
     background-repeat: no-repeat;
@@ -164,7 +172,7 @@ body{
     padding: 9px 8px 6px 8px;
     line-height: 1;
     border-radius: 8px;
-    color: #447372;
+    color: var(--marrom-escuro);
     background-color: #ddeafd;
 }
 
@@ -220,7 +228,7 @@ body{
 #corte1 .cortes img{
     width: 100%;
     border-radius: 20px;
-    height: 224px;
+    height: 300px;
     /* max-height: 224px; */
 }
 
@@ -230,14 +238,14 @@ body{
 }
 
 #corte1 .cortes .descricao span{
-    color: #447372;
+    color: var(--verde-claro);
     font-size: 14px;
 
 }
 
 #corte1 .cortes .descricao h5{
     padding-top: 8px;
-    color:#4a4a4a;
+    color: var(--verde-claro);
     font-size: 16px;
 }
 
@@ -250,7 +258,7 @@ body{
     padding-top: 8px;
     font-size: 16px;
     font-weight: 700;
-    color: #447372;
+    color: var(--verde-claro);
 }
 
 #corte1 .cortes .cart{
@@ -259,7 +267,7 @@ body{
     line-height: 40px;
     border-radius: 50px;
     /* background-color: #e9f6e8; */
-    color: #447372;
+    color: var(--verde-claro);
     border: 1px solid #cce7d0;
     position: absolute;
     bottom: 20px;
@@ -345,7 +353,7 @@ body{
 }
 
 #form-details form button{
-    background-color: #4c6444 ;
+    background-color: var(--verde-claro) ;
     color: fff;
 }
 
@@ -466,7 +474,7 @@ margin-bottom: 30px;
 
 #coupon button,
 #subTotal button{
-    background-color: #4c6444 ;
+    background-color: var(--verde-claro) ;
     color: #fff;
     padding: 12px 20px;
 }
@@ -554,13 +562,13 @@ margin-bottom: 30px;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #4c6444;
+    background-color: var(--verde-claro);
 }
 
 #signForVagas h4{
     font-size: 22px;
     font-weight: 800px;
-    color: #102820;
+    color: var(--verde-escuro);
 }
 
 #signForVagas p{
@@ -570,7 +578,7 @@ margin-bottom: 30px;
 }
 
 #signForVagas p span{
-    color: #102820;
+    color: var(--verde-escuro);
     font-weight: 700;
 }
 
@@ -596,7 +604,7 @@ margin-bottom: 30px;
     border-radius: 8px;
     outline: none;
     color: #caba9c;
-    background-color: #102820;
+    background-color: var(--verde-escuro);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     cursor: pointer;
@@ -604,7 +612,7 @@ margin-bottom: 30px;
 }
 
 #signForVagas button:hover{
-    background-color: #4d2d18;
+    background-color: var(--marrom-escuro);
     
 }
 
