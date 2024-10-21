@@ -50,7 +50,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background-color: #e3e6f3;
+    background-color: #4c6444;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
@@ -75,17 +75,17 @@ body{
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
-    color: #1a1a1a;
+    color: #102820 ;
     transition: 0.4s ease;
 }
 
 #navbar li a:hover{
-    color: #447372;
+    color: #CABA9C ;
 }
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #447372;
+    color: #CABA9C ;
 }
 
 #navbar li a.active::after,
@@ -93,7 +93,7 @@ body{
     content: "";
     width: 30%;
     height: 2px;
-    background: #447372;
+    background: #CABA9C;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -345,7 +345,7 @@ body{
 }
 
 #form-details form button{
-    background-color: #088178;
+    background-color: #4c6444 ;
     color: fff;
 }
 
@@ -466,7 +466,7 @@ margin-bottom: 30px;
 
 #coupon button,
 #subTotal button{
-    background-color: #088178;
+    background-color: #4c6444 ;
     color: #fff;
     padding: 12px 20px;
 }
@@ -547,4 +547,67 @@ margin-bottom: 30px;
         width: 100%;
         padding: 20px;
     }
+}
+
+#signForVagas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #4c6444;
+}
+
+#signForVagas h4{
+    font-size: 22px;
+    font-weight: 800px;
+    color: #102820;
+}
+
+#signForVagas p{
+    font-size: 16px;
+    font-weight: 500px;
+    color: #caba9c;
+}
+
+#signForVagas p span{
+    color: #102820;
+    font-weight: 700;
+}
+
+#signForVagas input{
+
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#signForVagas button{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    color: #caba9c;
+    background-color: #102820;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+#signForVagas button:hover{
+    background-color: #4d2d18;
+    
+}
+
+#signForVagas .form{
+    display: flex;
 }
