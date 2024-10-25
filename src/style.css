@@ -342,6 +342,8 @@ footer .col{
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 footer .logo{
