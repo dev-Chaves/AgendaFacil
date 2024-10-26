@@ -205,15 +205,20 @@ body {
 }
 
 #corte1 .containerCortes {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    max-width: 1200px;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
     padding-top: 20px;
-    flex-direction: row;
-    flex-wrap: wrap;
+
 }
 
 #corte1 .cortes {
-    width: 23%;
+    width: 15%;
     min-width: 250px;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
@@ -674,6 +679,12 @@ footer .copyright{
 
 @media (max-width: 799px) {
 
+    /* Home */
+
+    #corte1 .containerCortes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     /* About Page */
 
     #about-head h2{
@@ -697,6 +708,11 @@ footer .copyright{
 
 @media (max-width: 477px) {
 
+    /* Home */
+
+    #corte1 .containerCortes{
+        width: 100vw;
+    }
 
     /* About Page */
 
