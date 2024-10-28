@@ -61,7 +61,121 @@ body {
     width: 100%;
 }
 
-#header {
+/*  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #23232e;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#header header nav #cart{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #23232e;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@media (max-width: 799px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 12.5vh;
+        right: 0;
+        width: 100vw;
+        height: 92vh;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        transform: translateX(100%);
+        transition: 0.3s;
+    }
+
+    .nav-list li {
+        margin-top:40px;
+        margin-left: 0;
+        opacity: 0;
+        
+        font-size: 32px;
+    }
+
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*  */
+#header header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -709,7 +823,7 @@ footer .copyright{
 
     /* Home */
 
-
+ 
     #feature{
         grid-template-columns: 1fr 1fr;
 
