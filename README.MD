@@ -9,11 +9,11 @@ Este projeto está em desenvolvimento. A estrutura básica já foi definida e im
 
 ## Tecnologias Utilizadas
 
-- **Java** e **Spring Boot** para o desenvolvimento do backend.
+- **Java 21** e **Spring Boot 3.4.3** para o desenvolvimento do backend.
 - **Spring Security** para gerenciar autenticação e autorização.
 - **JPA/Hibernate** para mapeamento objeto-relacional (ORM) e acesso ao banco de dados.
-- **Banco de Dados**: PostgreSQL (ou outro de sua escolha).
-- **Maven/Gradle** para gerenciamento de dependências e build.
+- **Banco de Dados**: PostgreSQL.
+- **Maven** para gerenciamento de dependências e build.
 
 ## Estrutura do Projeto
 
