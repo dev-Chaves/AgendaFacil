@@ -1,10 +1,12 @@
 package com.agendarai.Agenda.Facil.model;
 
+import com.agendarai.Agenda.Facil.model.enums.UserType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.usertype.UserType;
+
+import java.util.List;
 
 @Entity
 @Table(name="tb_user")
@@ -12,23 +14,29 @@ import org.hibernate.usertype.UserType;
 @AllArgsConstructor
 @Data
 public class UserModel {
-    private static long serialVersionUID = 1;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = false)
-    private String user_name;
+    @Column(nullable = false)
+    private String userName;
 
     @Column(nullable = false, unique = true)
-    private String user_email;
+    private String userEmail;
 
     @Column(nullable = false)
-    private char password;
+    private String password;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private UserType user_type;
+    private UserType userType;
+
+    @OneToMany(mappedBy = "professor", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<AvailabilityModel> availabilities;
+
+    @OneToMany(mappedBy = "aluno", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ReservaModel> reservations;
+
 
 }
