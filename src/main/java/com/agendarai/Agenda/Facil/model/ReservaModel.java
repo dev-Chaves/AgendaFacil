@@ -4,27 +4,28 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
+
+import java.util.UUID;
 
 @Entity
-@Table(name="tb_reserva")
+@Table(name = "tb_reservas")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class ReservaModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
-    @ManyToOne
-    @JoinColumn(name = "professor_id", nullable = false)
-    private UserModel professor;
+    @GeneratedValue(generator = "UUID")
+    @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
+    private UUID id;
 
     @ManyToOne
     @JoinColumn(name = "aluno_id", nullable = false)
-    private UserModel aluno;
+    private AlunoModel aluno;
 
     @OneToOne
-    @JoinColumn(name = "availability_id", nullable = false, unique = true)
+    @JoinColumn(name = "availability_id", nullable = false)
     private AvailabilityModel availability;
 }
+
