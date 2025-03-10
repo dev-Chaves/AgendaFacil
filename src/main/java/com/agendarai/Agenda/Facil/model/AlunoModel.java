@@ -30,16 +30,13 @@ public class AlunoModel {
     @Column(nullable = false)
     private String password;
 
-    // Token do personal para garantir que o aluno veja apenas os horários do personal associado
     @Column(nullable = false)
     private UUID personalToken;
 
-    // Muitos alunos podem estar associados a um único personal
     @ManyToOne
     @JoinColumn(name = "personal_id", nullable = false)
     private PersonalModel personal;
 
-    // O aluno pode ter várias reservas
     @OneToMany(mappedBy = "aluno", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ReservaModel> reservas;
 }
