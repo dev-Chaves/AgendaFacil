@@ -10,6 +10,6 @@ import java.util.UUID;
 @Repository
 public interface AlunoRepository extends JpaRepository<AlunoModel, UUID> {
     Optional<AlunoModel> findByUserEmail(String email);
-    Optional<AlunoModel> findByUserNickname(String userName);
+    Optional<AlunoModel> findByUserName(String userName);
 }
 
